@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #240D16;
+  --color-bg-secondary: #3A1422;
+  --color-bg-card: #351522;
+  --color-maroon-primary: #6E1835;
+  --color-maroon-hover: #8D2246;
+  --color-maroon-dark: #19080F;
+  --color-cyan-primary: #22D3EE;
+  --color-cyan-light: #67E8F9;
+  --color-cyan-dark: #0891B2;
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #B8A9AF;
+  --color-text-muted: #8E7A83;
+  --color-success: #4ADE80;
+  --color-error: #FB7185;
+  --color-warning: #FBBF24;
+  --font-jp: "Noto Sans JP", sans-serif;
+}
+
+:root {
+  --background: #240D16;
+  --foreground: #F8FAFC;
+}
+
+body {
+  background-color: #240D16;
+  color: #F8FAFC;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+.font-japanese {
+  font-family: var(--font-jp), "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+}
+
+/* Custom scrollbar for modern dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #240D16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3A1422;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6E1835;
+}
+
+/* Glassmorphic card styling */
+.glass-panel {
+  background: rgba(53, 21, 34, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(110, 24, 53, 0.4);
+}
+
+.glass-panel-cyan {
+  background: rgba(53, 21, 34, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+}
+
+/* Subtle glow effects */
+.glow-cyan {
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.25);
+}
+
+.glow-maroon {
+  box-shadow: 0 0 25px rgba(110, 24, 53, 0.4);
+}
